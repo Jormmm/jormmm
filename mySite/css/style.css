@@ -14,7 +14,7 @@
 .container {
 	max-width: 1920px;
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 15px;
 }
 .header__body {
 	position: relative;
@@ -94,7 +94,7 @@
 		font-size: 10px;
 	}
 	.header__logo {
-		font-size: 16px;
+		font-size: 28px;
 	}
 }
 
