@@ -1,5 +1,5 @@
 const menu = document.querySelector('.header__list')
-// const menuItems = document.querySelectorAll('.menuItem')
+const menuItems = document.querySelectorAll('.header__link')
 const hamburger = document.querySelector('.header__burger')
 
 function toggleMenu() {
@@ -14,6 +14,10 @@ function toggleMenu() {
 
 hamburger.addEventListener('click', toggleMenu)
 
-
+menuItems.forEach(function (menuItem) {
+	menuItem.addEventListener('click', function () {
+		toggleMenu()
+	})
+})
 
 

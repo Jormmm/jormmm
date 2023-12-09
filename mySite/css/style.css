@@ -261,7 +261,7 @@
 @media (max-width: 1023.98px) {
 	.block-right__discord {
 		position: absolute;
-		top: 60%;
+		top: 25px;
 		right: 50%;
 	}
 }
@@ -646,5 +646,24 @@
 		font-size: 60px;
 		line-height: 70px;
 	}
-
 }
+.ds-link{
+	margin-top: 50px;
+	color: #00000043;
+	font-size: 30px;
+}
+.ns-link{
+	margin-top: 10px;
+	color: #00000043;
+	font-size: 30px;
+}
+@media (min-width: 1023.98px){
+	.ds-link{
+		display: none;
+	}
+		.ns-link{
+		display: none;
+	}
+}
+
+
