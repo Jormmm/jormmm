@@ -75,6 +75,7 @@
 .header__list {
 	display: flex;
 	gap: 70px;
+	position: relative;
 }
 @media (max-width: 1024px) {
 	.header__list {
@@ -115,12 +116,28 @@
 	text-transform: uppercase;
 	z-index: 3;
 }
-@media (max-width: 1024px) {
+	.two-block{
+		/* position: absolute;
+		top: 25px;
+		right: 100px; */
+	}
+@media (max-width: 1023.98px) {
 	.header__contact {
 		font-size: 10px;
 	}
 	.header__logo {
 		font-size: 28px;
+	}
+	.zero-block{
+		display: none;
+	}
+	.two-block{
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1023.98px){
+	.two-block{
+		display: none;
 	}
 }
 
@@ -158,6 +175,27 @@
 	font-weight: 400;
 	line-height: normal;
 	text-transform: uppercase;
+	display: flex;
+	overflow: hidden;
+	width: 30%;
+}
+.speedstring{
+	display: flex;
+	width: 200%;
+	gap: 25%;
+}
+.speedstring span{
+	white-space: nowrap;
+	width: 100%;
+	animation: speedstreeng 3s linear infinite;
+}
+@keyframes speedstreeng {
+	0% {
+		transform: translatex(-22%);
+	}
+	100% {
+		transform: translatex(-175%);
+	}
 }
 
 .block-right {
@@ -220,9 +258,17 @@
 		right: 0;
 	}
 }
+@media (max-width: 1023.98px) {
+	.block-right__discord {
+		position: absolute;
+		top: 45%;
+		right: 50%;
+	}
+}
 @media (max-width: 768px) {
 	.block-left__skills {
 		font-size: 14px;
+		width: 100%;
 	}
 	.block-right__text {
 		font-size: 12px;
@@ -525,6 +571,7 @@
 	line-height: 105px; /* 84% */
 	text-transform: uppercase;
 	max-width: 400px;
+	position: relative;
 }
 .sp-top__block {
 	max-width: 200px;
