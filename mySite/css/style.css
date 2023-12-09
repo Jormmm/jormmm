@@ -666,4 +666,12 @@
 	}
 }
 
-
+.up{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	max-width: 50px;
+}
+.up  img{
+	max-width: 100%;
+}
