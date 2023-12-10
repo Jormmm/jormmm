@@ -84,6 +84,8 @@
 		text-align: center;
 		position: fixed;
 		transform: translateY(-100%);
+		visibility: hidden;
+		transition: display 0.2s;
 		transition: transform 0.2s;
 		top: 0;
 		left: 0;
@@ -342,6 +344,7 @@
 
 .showMenu {
 	transform: translateY(0);
+	visibility: visible;
 }
 
 @media (max-width: 1024px) {
