@@ -661,6 +661,11 @@
 	color: #00000043;
 	font-size: 30px;
 }
+.sp-link{
+	margin-top: 10px;
+	color: #00000043;
+	font-size: 30px;
+}
 @media (min-width: 1023.98px){
 	.ds-link{
 		display: none;
@@ -669,6 +674,9 @@
 		display: none;
 	}
 		.in-link{
+		display: none;
+	}
+		.sp-link{
 		display: none;
 	}
 }
@@ -721,5 +729,129 @@
 	}
 	.inst__image{
 		max-width: 100%;
+	}
+}
+
+
+
+
+.expert-block {
+	background-color: #FFFCF6;
+	color: var(--Text, #1B3B36);
+	padding: 70px 0 70px 0;
+}
+.expert {
+	display: flex;
+	flex-direction: column;
+}
+.expert__person {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 0 50px 0;
+	align-content: center;
+}
+.expert__title {
+}
+.expert__name {
+	color: var(--Text, #1B3B36);
+    font-family: Miracle;
+    font-size: 125px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105px;
+    text-transform: uppercase;
+    max-width: 400px;
+	margin: 50px 0 40px 0;
+}
+.expert__text {
+	color: var(--Text, #1B3B36);
+    font-family: Helvetica Neue LT Std;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 400px;
+	text-align: justify;
+}
+.expert__image {
+	border-bottom: 1px solid black;
+	position: relative;
+}
+.expert__image img{
+	max-width: 100%;
+}
+.expert__image::before{
+	content: 'Виталий во время изучения React:';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	color: #1b3b368a;
+}
+
+.exp {
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-around;
+	align-items: stretch;
+}
+.exp__item {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-radius: 20px;
+	width: 450px;
+	height: 240px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.exp__title {
+	font-size: 26px;
+	position: relative;
+	background: url(../img/search-icon-png-21.png) left top / contain  no-repeat;
+	padding: 0 0 0 35px;
+}
+.exp__title::after{
+	content: '';
+	background-color: #140f0f;
+	width: 25%;
+	height: 2px;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+}
+.exp__text {
+	font-size: 20px;
+}
+
+@media (max-width: 1390px){
+	.exp {
+	flex-wrap: wrap;
+	}
+	.expert__person{
+		flex-direction: column;
+	}
+	.expert__image::before{
+	top: 25%;
+	left: 20%;
+	}
+}
+
+@media (max-width: 1024px){
+	.expert__name{
+		font-size: 70px;
+		line-height: 90px;
+	}
+}
+@media (max-width: 768px){
+	.expert__name{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.expert__text{
+		font-size: 20px;
 	}
 }
