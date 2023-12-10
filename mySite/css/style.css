@@ -656,11 +656,19 @@
 	color: #00000043;
 	font-size: 30px;
 }
+.in-link{
+	margin-top: 10px;
+	color: #00000043;
+	font-size: 30px;
+}
 @media (min-width: 1023.98px){
 	.ds-link{
 		display: none;
 	}
 		.ns-link{
+		display: none;
+	}
+		.in-link{
 		display: none;
 	}
 }
